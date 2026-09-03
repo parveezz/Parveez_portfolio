@@ -1,9 +1,9 @@
-import { GET as handleGet, POST as handlePost } from "@/backend/routes/contactRoutes";
+import { getContactStatus, sendContactMessage } from "@/backend/controllers/contactController";
 
 export async function GET(request) {
-  return await handleGet(request);
+  return await getContactStatus(request);
 }
 
 export async function POST(request) {
-  return await handlePost(request);
+  return await sendContactMessage(request);
 }

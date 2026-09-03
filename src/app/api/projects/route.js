@@ -1,9 +1,9 @@
-import { GET as handleGet, POST as handlePost } from "@/backend/routes/projectRoutes";
+import { getProjects, createProject } from "@/backend/controllers/projectController";
 
 export async function GET(request) {
-  return await handleGet(request);
+  return await getProjects(request);
 }
 
 export async function POST(request) {
-  return await handlePost(request);
+  return await createProject(request);
 }
