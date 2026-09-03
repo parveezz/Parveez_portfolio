@@ -64,9 +64,29 @@ export default function Home() {
           <h1 style={{ fontSize: "2.75rem", fontWeight: 800, margin: "0.75rem 0", background: "linear-gradient(135deg, #fff 30%, #a5b4fc 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             Backend Configured
           </h1>
-          <p style={{ color: "#9ca3af", fontSize: "1.125rem", maxWidth: "600px", margin: "0 auto" }}>
+          <p style={{ color: "#9ca3af", fontSize: "1.125rem", maxWidth: "600px", margin: "0 auto 1.5rem auto" }}>
             Your backend is wired with <strong>MongoDB Atlas</strong> for data persistence and <strong>Nodemailer</strong> for instant Gmail alerts.
           </p>
+          <div>
+            <a
+              href="/contact"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                background: "linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)",
+                color: "#ffffff",
+                padding: "0.75rem 1.5rem",
+                borderRadius: "9999px",
+                fontWeight: 600,
+                fontSize: "0.95rem",
+                textDecoration: "none",
+                boxShadow: "0 4px 15px rgba(99, 102, 241, 0.35)",
+              }}
+            >
+              Open Dedicated Contact Page &rarr;
+            </a>
+          </div>
         </header>
 
         {/* Status Grid */}
