@@ -1,8 +1,10 @@
 import { NextResponse } from "next/server";
+import connectDB from "@/backend/config/db";
 import Project from "@/backend/models/Project";
 
 export async function getProjects() {
   try {
+    await connectDB();
     const projects = await Project.find().sort({
       createdAt: -1,
     });
@@ -32,6 +34,7 @@ export async function getProjects() {
 
 export async function createProject(req) {
   try {
+    await connectDB();
     const body = await req.json();
 
     const title = body.title;

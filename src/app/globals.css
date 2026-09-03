@@ -6,6 +6,12 @@ body,
 * {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
+  font-family: var(--font-poppins), "Poppins", sans-serif;
+}
+
+body {
+  background-color: #F5EFE6;
+  color: #1F2A24;
 }
 
 *::-webkit-scrollbar {

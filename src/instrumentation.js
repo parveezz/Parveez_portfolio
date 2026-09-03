@@ -1,6 +1,6 @@
 export async function register() {
-  if (process.env.NEXT_RUNTIME === "nodejs") {
-    const connectDB = (await import("@/backend/config/db")).default;
-    await connectDB();
-  }
+  // MongoDB connection is handled on-demand in API route handlers
+  // to avoid blocking Next.js startup or failing when offline.
 }
+
+
