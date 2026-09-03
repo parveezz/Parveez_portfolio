@@ -37,13 +37,12 @@ export default function AboutHero() {
         <div className="flex flex-wrap items-center gap-3 shrink-0">
           <a
             href="/Shaik_Parveez_Resume.pdf"
-            download="Shaik_Parveez_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4.5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold text-[#1F2A24] bg-[#E8DFD0] hover:bg-[#dfd5c5] border border-[#D8CEBD] transition-all shadow-sm active:scale-95"
           >
             <FiDownload className="text-base text-[#2F5D50]" />
-            <span>Download CV</span>
+            <span>View Resume</span>
           </a>
 
           <a

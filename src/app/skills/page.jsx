@@ -4,6 +4,26 @@ import SkillsHero from "../components/skills/SkillsHero";
 import SkillsFilterGrid from "../components/skills/SkillsFilterGrid";
 import SkillsImpact from "../components/skills/SkillsImpact";
 
+export const metadata = {
+  title: "Skills & Architecture | Full-Stack Tech Stack",
+  description:
+    "Explore the technical competencies and tools mastered by Shaik Parveez: Next.js 15, React, JavaScript (ES6+), Node.js, Express, MongoDB Atlas, PostgreSQL, Tailwind CSS, and REST APIs.",
+  keywords: [
+    "Shaik Parveez Skills",
+    "React.js Developer",
+    "Next.js App Router",
+    "Node.js Backend Developer",
+    "MongoDB Atlas Developer",
+    "PostgreSQL SQL Developer",
+    "Tailwind CSS Specialist",
+    "RESTful API Integration",
+    "Frontend Engineering Hyderabad",
+  ],
+  alternates: {
+    canonical: "/skills",
+  },
+};
+
 export default function SkillsPage() {
   return (
     <div className="min-h-screen bg-[#F5EFE6] text-[#1F2A24] selection:bg-[#E8DFD0] selection:text-[#1F2A24] flex flex-col justify-between font-normal">

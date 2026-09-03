@@ -3,6 +3,24 @@ import ContactHeader from "../components/contact/ContactHeader";
 import ContactForm from "../components/contact/ContactForm";
 import ContactFooterBar from "../components/contact/ContactFooterBar";
 
+export const metadata = {
+  title: "Contact & Hire | Get in Touch with Shaik Parveez",
+  description:
+    "Get in touch with Shaik Parveez for full-time Full-Stack Developer roles, freelance opportunities, web engineering contracts, or technical consultations.",
+  keywords: [
+    "Contact Shaik Parveez",
+    "Hire Full-Stack Developer",
+    "Hire React Developer Hyderabad",
+    "Next.js Consultant",
+    "Shaik Parveez Email",
+    "Shaik Parveez Phone",
+    "Software Engineer for Hire",
+  ],
+  alternates: {
+    canonical: "/contact",
+  },
+};
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen lg:h-screen lg:max-h-screen overflow-y-auto lg:overflow-hidden w-full bg-[url('/meadow_contact_bg.jpg')] bg-cover bg-top bg-no-repeat flex flex-col justify-between font-normal">

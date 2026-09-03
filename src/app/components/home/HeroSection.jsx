@@ -52,13 +52,12 @@ export default function HeroSection() {
 
         <a
           href="/Shaik_Parveez_Resume.pdf"
-          download="Shaik_Parveez_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-5 py-3 rounded-full text-xs sm:text-sm font-semibold text-[#2F5D50] bg-[#E8DFD0] hover:bg-[#dfd5c5] border border-[#D8CEBD] shadow-xs active:scale-95 transition-all flex items-center gap-2"
         >
           <FiDownload className="text-base" />
-          <span>Resume</span>
+          <span>View Resume</span>
         </a>
 
         <a
