@@ -158,7 +158,7 @@ export default function MeadowbellHeroPage() {
             </ul>
           </nav>
 
-          <a href="#contact" className="nav-join" ref={navJoinRef} aria-label="Contact Shaik Parveez">
+          <a href="mailto:shaikparveez225@gmail.com" className="nav-join" ref={navJoinRef} aria-label="Contact Shaik Parveez">
             CONTACT
           </a>
         </header>
@@ -178,7 +178,7 @@ export default function MeadowbellHeroPage() {
             </span>
           </h1>
           <p className="subline" ref={sublineRef}>
-            {"Building high-performance, responsive web applications with\nNext.js, React, and modern UI motion architecture. Passionate about\nclean code, intuitive user experiences, and pixel-perfect design."}
+            {"Frontend Developer at Invertio Software Solutions crafting responsive,\naccessible, and performance-focused web apps. Delivered Invertio corporate,\nGreenLoop admin portal, and ZeroQueries with clean React and Next.js."}
           </p>
 
           {/* Action CTAs */}
@@ -186,7 +186,7 @@ export default function MeadowbellHeroPage() {
             <a href="#projects" className="btn-join-hero" ref={btnJoinRef} aria-label="Explore Projects">
               View Work
             </a>
-            <a href="#contact" className="btn-preview" ref={btnPreviewRef} aria-label="Get in Touch">
+            <a href="mailto:shaikparveez225@gmail.com" className="btn-preview" ref={btnPreviewRef} aria-label="Email Shaik Parveez">
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M6 4.75C6 3.97 6.85 3.5 7.5 3.92L19.2 11.17C19.83 11.57 19.83 12.43 19.2 12.83L7.5 20.08C6.85 20.5 6 20.03 6 19.25V4.75Z" />
               </svg>
@@ -201,7 +201,13 @@ export default function MeadowbellHeroPage() {
             <h2 className="chapters-title" id="projects-heading" ref={chaptersTitleRef}>
               PROJECTS
             </h2>
-            <a href="#projects" className="chapters-link" ref={chaptersLinkRef}>
+            <a
+              href="https://www.linkedin.com/in/shaik-parveez"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="chapters-link"
+              ref={chaptersLinkRef}
+            >
               <span>browse all projects</span>
               <span className="chevron" aria-hidden="true">›</span>
             </a>
@@ -214,7 +220,7 @@ export default function MeadowbellHeroPage() {
                 <img
                   className="card-art"
                   src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/cd2d844f-ae3f-4fa9-8067-b077530b6e71.webp"
-                  alt="Learning Frontend - Foundations & Component Roots"
+                  alt="Learning Frontend - Fullstack Academy Foundations"
                   loading="lazy"
                 />
 
@@ -227,15 +233,21 @@ export default function MeadowbellHeroPage() {
                 {/* Bottom Bar */}
                 <div className="card-bottom-bar">
                   <div className="card-milestone">
-                    <span className="card-milestone-title">Foundations & Seeds</span>
+                    <span className="card-milestone-title">Fullstack Academy</span>
                     <span className="card-milestone-sub">HTML5 · CSS3 · JS · React</span>
                   </div>
-                  <div className="card-arrow-btn" aria-label="Explore Learning Frontend">
+                  <a
+                    href="https://www.linkedin.com/in/shaik-parveez"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-arrow-btn"
+                    aria-label="Explore Chapter 1 Foundations"
+                  >
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                       <line x1="7" y1="17" x2="17" y2="7" />
                       <polyline points="7 7 17 7 17 17" />
                     </svg>
-                  </div>
+                  </a>
                 </div>
               </div>
             </article>
@@ -246,7 +258,7 @@ export default function MeadowbellHeroPage() {
                 <img
                   className="card-art"
                   src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/48f5b97e-c27c-4afd-9427-eb35aebd1751.webp"
-                  alt="The Path of Invertio - Professional Software Journey"
+                  alt="The Path of Invertio - Associate Software Engineer"
                   loading="lazy"
                 />
 
@@ -259,15 +271,21 @@ export default function MeadowbellHeroPage() {
                 {/* Bottom Bar */}
                 <div className="card-bottom-bar">
                   <div className="card-milestone">
-                    <span className="card-milestone-title">Professional Journey</span>
-                    <span className="card-milestone-sub">Next.js · Production Apps · Team</span>
+                    <span className="card-milestone-title">Invertio Corporate Site</span>
+                    <span className="card-milestone-sub">Associate Software Engineer · React</span>
                   </div>
-                  <div className="card-arrow-btn" aria-label="Explore The Path of Invertio">
+                  <a
+                    href="https://www.linkedin.com/in/shaik-parveez"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-arrow-btn"
+                    aria-label="Explore Invertio Journey"
+                  >
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                       <line x1="7" y1="17" x2="17" y2="7" />
                       <polyline points="7 7 17 7 17 17" />
                     </svg>
-                  </div>
+                  </a>
                 </div>
               </div>
             </article>
@@ -278,7 +296,7 @@ export default function MeadowbellHeroPage() {
                 <img
                   className="card-art"
                   src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/cde5384e-ce4d-423f-925a-451b779066e0.webp"
-                  alt="Growth & Experience - Mastering Modern Web Engineering"
+                  alt="Experience & Beyond - GreenLoop & ZeroQueries Portals"
                   loading="lazy"
                 />
 
@@ -291,15 +309,21 @@ export default function MeadowbellHeroPage() {
                 {/* Bottom Bar */}
                 <div className="card-bottom-bar">
                   <div className="card-milestone">
-                    <span className="card-milestone-title">Mastery & Horizons</span>
-                    <span className="card-milestone-sub">UI Motion · Full-Stack · Continuous</span>
+                    <span className="card-milestone-title">GreenLoop & ZeroQueries</span>
+                    <span className="card-milestone-sub">Admin Portals · Landing Pages · UI</span>
                   </div>
-                  <div className="card-arrow-btn" aria-label="Explore Experience & Beyond">
+                  <a
+                    href="https://www.linkedin.com/in/shaik-parveez"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-arrow-btn"
+                    aria-label="Explore Production Projects"
+                  >
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                       <line x1="7" y1="17" x2="17" y2="7" />
                       <polyline points="7 7 17 7 17 17" />
                     </svg>
-                  </div>
+                  </a>
                 </div>
               </div>
             </article>
