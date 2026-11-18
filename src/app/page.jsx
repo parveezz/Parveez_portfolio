@@ -135,31 +135,33 @@ export default function MeadowbellHeroPage() {
 
       {/* UI Overlay Layer */}
       <div className="content-layer">
-        {/* Top Navigation */}
-        <nav className="nav-header" aria-label="Main Navigation">
+        {/* Top Navigation Bar with Rich Semantics */}
+        <header className="nav-header" role="banner">
           <a href="#" className="nav-logo" ref={logoRef} aria-label="Shaik Parveez Homepage">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 3C8 3 4 7 4 12C7 12 11 9 12 3Z" />
               <path d="M12 7C14 7 20 8.5 20 14C16.5 14 13 11.5 12 7Z" />
               <path d="M11 12C11 17 11.5 21 12 21" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" fill="none" />
             </svg>
-            <span>Shaik Parveez</span>
+            <span>SHAIK PARVEEZ</span>
           </a>
 
-          <div className="nav-pill" ref={navPillRef} role="menubar">
-            <a href="#about" role="menuitem">About</a>
-            <span className="dot" aria-hidden="true">·</span>
-            <a href="#skills" role="menuitem">Skills</a>
-            <span className="dot" aria-hidden="true">·</span>
-            <a href="#projects" role="menuitem">Projects</a>
-            <span className="dot" aria-hidden="true">·</span>
-            <a href="#experience" role="menuitem">Experience</a>
-          </div>
+          <nav className="nav-pill" ref={navPillRef} aria-label="Main Navigation">
+            <ul className="nav-pill-list">
+              <li><a href="#about">ABOUT</a></li>
+              <li className="dot" aria-hidden="true">·</li>
+              <li><a href="#skills">SKILLS</a></li>
+              <li className="dot" aria-hidden="true">·</li>
+              <li><a href="#projects">PROJECTS</a></li>
+              <li className="dot" aria-hidden="true">·</li>
+              <li><a href="#experience">EXPERIENCE</a></li>
+            </ul>
+          </nav>
 
           <a href="#contact" className="nav-join" ref={navJoinRef} aria-label="Contact Shaik Parveez">
-            Contact
+            CONTACT
           </a>
-        </nav>
+        </header>
 
         {/* Center Hero Copy Area (Semantic Header) */}
         <header className="copy-container">
