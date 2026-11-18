@@ -1,5 +1,12 @@
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://parveez.dev";
 
@@ -36,8 +43,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="antialiased font-sans bg-[#0c120e] text-[#F5EFE6] selection:bg-[#2F5D50] selection:text-[#F5EFE6]" suppressHydrationWarning>
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <body className={`${inter.className} antialiased font-sans bg-[#0c120e] text-[#F5EFE6] selection:bg-[#2F5D50] selection:text-[#F5EFE6]`} suppressHydrationWarning>
         {children}
         <Toaster position="top-right" richColors closeButton />
       </body>
