@@ -383,29 +383,6 @@ body {
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1);
 }
 
-/* Card Scrim Overlays for legibility */
-.card-scrim-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 52%;
-  background: linear-gradient(180deg, rgba(12, 18, 14, 0.76) 0%, rgba(12, 18, 14, 0.35) 60%, transparent 100%);
-  pointer-events: none;
-  z-index: 2;
-}
-
-.card-scrim-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 52%;
-  background: linear-gradient(0deg, rgba(12, 18, 14, 0.82) 0%, rgba(12, 18, 14, 0.38) 60%, transparent 100%);
-  pointer-events: none;
-  z-index: 2;
-}
-
 /* Card Header Badge at Top */
 .card-header-badge {
   position: absolute;
@@ -420,12 +397,12 @@ body {
 
 .card-stage-tag {
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: calc(11 * var(--u));
-  letter-spacing: calc(1 * var(--u));
-  color: #C9A66B;
+  letter-spacing: calc(1.2 * var(--u));
+  color: #ffffff;
   text-transform: uppercase;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .card-title {
@@ -434,7 +411,7 @@ body {
   font-size: calc(21 * var(--u));
   line-height: 1.15;
   color: #ffffff;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95), 0 4px 12px rgba(0, 0, 0, 0.85);
   letter-spacing: calc(0.3 * var(--u));
 }
 

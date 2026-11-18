@@ -218,10 +218,6 @@ export default function MeadowbellHeroPage() {
                   loading="lazy"
                 />
 
-                {/* Gradient Scrims for Text Legibility */}
-                <div className="card-scrim-top" aria-hidden="true" />
-                <div className="card-scrim-bottom" aria-hidden="true" />
-
                 {/* Top Highlight Badge & Title */}
                 <div className="card-header-badge">
                   <span className="card-stage-tag">CHAPTER 01</span>
@@ -254,10 +250,6 @@ export default function MeadowbellHeroPage() {
                   loading="lazy"
                 />
 
-                {/* Gradient Scrims for Text Legibility */}
-                <div className="card-scrim-top" aria-hidden="true" />
-                <div className="card-scrim-bottom" aria-hidden="true" />
-
                 {/* Top Highlight Badge & Title */}
                 <div className="card-header-badge">
                   <span className="card-stage-tag">CHAPTER 02</span>
@@ -289,10 +281,6 @@ export default function MeadowbellHeroPage() {
                   alt="Growth & Experience - Mastering Modern Web Engineering"
                   loading="lazy"
                 />
-
-                {/* Gradient Scrims for Text Legibility */}
-                <div className="card-scrim-top" aria-hidden="true" />
-                <div className="card-scrim-bottom" aria-hidden="true" />
 
                 {/* Top Highlight Badge & Title */}
                 <div className="card-header-badge">
