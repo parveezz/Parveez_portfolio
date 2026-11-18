@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,11 +9,14 @@
   <!-- Google Fonts: Grandstander (900) & Inter (400, 500) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@900&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
 
   <style>
     /* CSS Reset */
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -324,9 +328,17 @@
       z-index: 5;
     }
 
-    .chapter-card-1 { left: calc(133 * var(--u)); }
-    .chapter-card-2 { left: calc(531 * var(--u)); }
-    .chapter-card-3 { left: calc(929 * var(--u)); }
+    .chapter-card-1 {
+      left: calc(133 * var(--u));
+    }
+
+    .chapter-card-2 {
+      left: calc(531 * var(--u));
+    }
+
+    .chapter-card-3 {
+      left: calc(929 * var(--u));
+    }
 
     .card-media-wrapper {
       position: relative;
@@ -395,7 +407,10 @@
       .scene-video {
         display: none !important;
       }
-      *, *::before, *::after {
+
+      *,
+      *::before,
+      *::after {
         transition-duration: 0.001ms !important;
         animation-duration: 0.001ms !important;
       }
@@ -425,7 +440,8 @@
       }
 
       /* Phone Scene: 9:8 box sized to hero's height shifted so boy and dog stay in view */
-      .scene-plate, .scene-video {
+      .scene-plate,
+      .scene-video {
         width: auto;
         height: 100%;
         aspect-ratio: 9 / 8;
@@ -615,25 +631,19 @@
     }
   </style>
 </head>
+
 <body>
 
   <main class="hero-frame" id="heroFrame">
     <!-- Plate & Looping Animation Layer -->
     <div class="scene-container">
-      <img
-        class="scene-plate"
+      <img class="scene-plate"
         src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/3ca5d10d-ea2f-4907-876f-33bde169469e.jpg"
-        alt="A sunny grassy hillside with a boy and his beagle looking up at a cumulus sky"
-      />
-      <video
-        class="scene-video"
-        autoplay
-        loop
-        muted
-        playsinline
-        preload="auto"
-      >
-        <source src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/d2cb5bef-f92b-4e91-ae93-8dc6555e56ac.mp4" type="video/mp4" />
+        alt="A sunny grassy hillside with a boy and his beagle looking up at a cumulus sky" />
+      <video class="scene-video" autoplay loop muted playsinline preload="auto">
+        <source
+          src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/d2cb5bef-f92b-4e91-ae93-8dc6555e56ac.mp4"
+          type="video/mp4" />
       </video>
     </div>
 
@@ -644,9 +654,9 @@
         <a href="#" class="nav-logo" id="animLogo" aria-label="Shaik Parveez">
           <svg viewBox="0 0 24 24">
             <!-- Two-leaf Sprout Icon -->
-            <path d="M12 3C8 3 4 7 4 12C7 12 11 9 12 3Z"/>
-            <path d="M12 7C14 7 20 8.5 20 14C16.5 14 13 11.5 12 7Z"/>
-            <path d="M11 12C11 17 11.5 21 12 21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M12 3C8 3 4 7 4 12C7 12 11 9 12 3Z" />
+            <path d="M12 7C14 7 20 8.5 20 14C16.5 14 13 11.5 12 7Z" />
+            <path d="M11 12C11 17 11.5 21 12 21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none" />
           </svg>
           <span>Shaik Parveez</span>
         </a>
@@ -665,32 +675,33 @@
       </nav>
 
       <!-- Center Copy Area -->
-      <div class="copy-container">
-        <p class="kicker" id="animKicker">HOLLYOAK'S</p>
+      <header class="copy-container">
+        <p class="kicker" id="animKicker">SHAIK PARVEEZ</p>
         <h1 class="headline" id="animHeadline">
-          <span class="headline-line" id="animHeadline1">PLUCKY</span><br />
-          <span class="headline-line" id="animHeadline2">SPROUT SQUAD</span>
+          <span class="headline-line" id="animHeadline1">FRONTEND</span><br />
+          <span class="headline-line" id="animHeadline2">WEB DEVELOPER</span>
         </h1>
-        <p class="subline" id="animSubline">Learn the Ways of the Meadow with<br />Hollyoak's Plucky Sprout Squad! Each chapter is<br />packed with play, chores, and wonder.</p>
+        <p class="subline" id="animSubline">Building high-performance, responsive web applications with<br />Next.js, React, and modern UI motion architecture. Passionate about<br />clean code, intuitive user experiences, and pixel-perfect design.</p>
 
         <!-- CTAs -->
         <div class="buttons-group">
-          <a href="#join" class="btn-join-hero" id="animBtnJoin">Join us</a>
-          <a href="#preview" class="btn-preview" id="animBtnPreview">
+          <a href="#projects" class="btn-join-hero" id="animBtnJoin">View Work</a>
+          <a href="#contact" class="btn-preview" id="animBtnPreview">
             <svg viewBox="0 0 24 24">
-              <path d="M6 4.75C6 3.97 6.85 3.5 7.5 3.92L19.2 11.17C19.83 11.57 19.83 12.43 19.2 12.83L7.5 20.08C6.85 20.5 6 20.03 6 19.25V4.75Z" />
+              <path
+                d="M6 4.75C6 3.97 6.85 3.5 7.5 3.92L19.2 11.17C19.83 11.57 19.83 12.43 19.2 12.83L7.5 20.08C6.85 20.5 6 20.03 6 19.25V4.75Z" />
             </svg>
-            <span>Watch preview</span>
+            <span>Get in Touch</span>
           </a>
         </div>
-      </div>
+      </header>
 
       <!-- Bottom Chapters Row -->
-      <section class="chapters-section">
+      <section class="chapters-section" id="projects">
         <div class="chapters-header">
-          <h2 class="chapters-title" id="animChaptersTitle">CHAPTERS</h2>
-          <a href="#all-chapters" class="chapters-link" id="animChaptersLink">
-            <span>browse all chapters</span>
+          <h2 class="chapters-title" id="animChaptersTitle">PROJECTS</h2>
+          <a href="#projects" class="chapters-link" id="animChaptersLink">
+            <span>browse all projects</span>
             <span class="chevron">›</span>
           </a>
         </div>
@@ -699,15 +710,13 @@
           <!-- Card 1: Vegetable Garden -->
           <article class="chapter-card chapter-card-1" id="animCard1">
             <div class="card-media-wrapper">
-              <img
-                class="card-art"
+              <img class="card-art"
                 src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/cd2d844f-ae3f-4fa9-8067-b077530b6e71.webp"
-                alt="A vegetable garden with tomato stakes and a cottage"
-                loading="lazy"
-              />
+                alt="A vegetable garden with tomato stakes and a cottage" loading="lazy" />
               <div class="card-play-btn" aria-hidden="true">
                 <svg viewBox="0 0 24 24">
-                  <path d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z"/>
+                  <path
+                    d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z" />
                 </svg>
               </div>
             </div>
@@ -716,15 +725,13 @@
           <!-- Card 2: Hill path & sheep -->
           <article class="chapter-card chapter-card-2" id="animCard2">
             <div class="card-media-wrapper">
-              <img
-                class="card-art"
+              <img class="card-art"
                 src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/48f5b97e-c27c-4afd-9427-eb35aebd1751.webp"
-                alt="A boy and dog on a hill path among sheep above the sea"
-                loading="lazy"
-              />
+                alt="A boy and dog on a hill path among sheep above the sea" loading="lazy" />
               <div class="card-play-btn" aria-hidden="true">
                 <svg viewBox="0 0 24 24">
-                  <path d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z"/>
+                  <path
+                    d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z" />
                 </svg>
               </div>
             </div>
@@ -733,15 +740,13 @@
           <!-- Card 3: Kite on breezy hill -->
           <article class="chapter-card chapter-card-3" id="animCard3">
             <div class="card-media-wrapper">
-              <img
-                class="card-art"
+              <img class="card-art"
                 src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/cde5384e-ce4d-423f-925a-451b779066e0.webp"
-                alt="A girl in a straw hat flying a kite on a breezy hill"
-                loading="lazy"
-              />
+                alt="A girl in a straw hat flying a kite on a breezy hill" loading="lazy" />
               <div class="card-play-btn" aria-hidden="true">
                 <svg viewBox="0 0 24 24">
-                  <path d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z"/>
+                  <path
+                    d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z" />
                 </svg>
               </div>
             </div>
@@ -853,4 +858,5 @@
     });
   </script>
 </body>
+
 </html>

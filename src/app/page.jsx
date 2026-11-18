@@ -19,7 +19,7 @@ export default function MeadowbellHeroPage() {
   const card3Ref = useRef(null);
 
   useEffect(() => {
-    // Check user preference for reduced motion
+    // Respect accessibility preference for reduced motion
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (prefersReducedMotion) return;
 
@@ -112,11 +112,11 @@ export default function MeadowbellHeroPage() {
   return (
     <main className="hero-frame" id="heroFrame">
       {/* Plate & Looping Animation Layer */}
-      <div className="scene-container">
+      <div className="scene-container" aria-hidden="true">
         <img
           className="scene-plate"
           src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/3ca5d10d-ea2f-4907-876f-33bde169469e.jpg"
-          alt="A sunny grassy hillside with a boy and his beagle looking up at a cumulus sky"
+          alt="Artistic landscape illustration of grassy hillside and blue sky"
         />
         <video
           className="scene-video"
@@ -136,9 +136,9 @@ export default function MeadowbellHeroPage() {
       {/* UI Overlay Layer */}
       <div className="content-layer">
         {/* Top Navigation */}
-        <nav className="nav-header">
-          <a href="#" className="nav-logo" ref={logoRef} aria-label="Shaik Parveez">
-            <svg viewBox="0 0 24 24">
+        <nav className="nav-header" aria-label="Main Navigation">
+          <a href="#" className="nav-logo" ref={logoRef} aria-label="Shaik Parveez Homepage">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 3C8 3 4 7 4 12C7 12 11 9 12 3Z" />
               <path d="M12 7C14 7 20 8.5 20 14C16.5 14 13 11.5 12 7Z" />
               <path d="M11 12C11 17 11.5 21 12 21" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" fill="none" />
@@ -146,73 +146,73 @@ export default function MeadowbellHeroPage() {
             <span>Shaik Parveez</span>
           </a>
 
-          <div className="nav-pill" ref={navPillRef}>
-            <a href="#about">About</a>
-            <span className="dot">·</span>
-            <a href="#skills">Skills</a>
-            <span className="dot">·</span>
-            <a href="#projects">Projects</a>
-            <span className="dot">·</span>
-            <a href="#experience">Experience</a>
+          <div className="nav-pill" ref={navPillRef} role="menubar">
+            <a href="#about" role="menuitem">About</a>
+            <span className="dot" aria-hidden="true">·</span>
+            <a href="#skills" role="menuitem">Skills</a>
+            <span className="dot" aria-hidden="true">·</span>
+            <a href="#projects" role="menuitem">Projects</a>
+            <span className="dot" aria-hidden="true">·</span>
+            <a href="#experience" role="menuitem">Experience</a>
           </div>
 
-          <a href="#contact" className="nav-join" ref={navJoinRef}>
+          <a href="#contact" className="nav-join" ref={navJoinRef} aria-label="Contact Shaik Parveez">
             Contact
           </a>
         </nav>
 
-        {/* Center Copy Area */}
-        <div className="copy-container">
+        {/* Center Hero Copy Area (Semantic Header) */}
+        <header className="copy-container">
           <p className="kicker" ref={kickerRef}>
-            HOLLYOAK'S
+            SHAIK PARVEEZ
           </p>
           <h1 className="headline">
             <span className="headline-line" ref={headline1Ref}>
-              PLUCKY
+              FRONTEND
             </span>
             <br />
             <span className="headline-line" ref={headline2Ref}>
-              SPROUT SQUAD
+              WEB DEVELOPER
             </span>
           </h1>
           <p className="subline" ref={sublineRef}>
-            {"Learn the Ways of the Meadow with\nHollyoak's Plucky Sprout Squad! Each chapter is\npacked with play, chores, and wonder."}
+            {"Building high-performance, responsive web applications with\nNext.js, React, and modern UI motion architecture. Passionate about\nclean code, intuitive user experiences, and pixel-perfect design."}
           </p>
 
-          {/* Action Buttons */}
+          {/* Action CTAs */}
           <div className="buttons-group">
-            <a href="#join" className="btn-join-hero" ref={btnJoinRef}>
-              Join us
+            <a href="#projects" className="btn-join-hero" ref={btnJoinRef} aria-label="Explore Projects">
+              View Work
             </a>
-            <a href="#preview" className="btn-preview" ref={btnPreviewRef}>
-              <svg viewBox="0 0 24 24">
+            <a href="#contact" className="btn-preview" ref={btnPreviewRef} aria-label="Get in Touch">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M6 4.75C6 3.97 6.85 3.5 7.5 3.92L19.2 11.17C19.83 11.57 19.83 12.43 19.2 12.83L7.5 20.08C6.85 20.5 6 20.03 6 19.25V4.75Z" />
               </svg>
-              <span>Watch preview</span>
+              <span>Get in Touch</span>
             </a>
           </div>
-        </div>
+        </header>
 
-        {/* Bottom Chapters Row */}
-        <section className="chapters-section">
+        {/* Bottom Projects / Chapters Row */}
+        <section className="chapters-section" id="projects" aria-labelledby="projects-heading">
           <div className="chapters-header">
-            <h2 className="chapters-title" ref={chaptersTitleRef}>
-              CHAPTERS
+            <h2 className="chapters-title" id="projects-heading" ref={chaptersTitleRef}>
+              PROJECTS
             </h2>
-            <a href="#all-chapters" className="chapters-link" ref={chaptersLinkRef}>
-              <span>browse all chapters</span>
-              <span className="chevron">›</span>
+            <a href="#projects" className="chapters-link" ref={chaptersLinkRef}>
+              <span>browse all projects</span>
+              <span className="chevron" aria-hidden="true">›</span>
             </a>
           </div>
 
           <div className="chapters-scroll-track">
-            {/* Card 1: Vegetable Garden */}
+            {/* Project Card 1 */}
             <article className="chapter-card chapter-card-1" ref={card1Ref}>
               <div className="card-media-wrapper">
                 <img
                   className="card-art"
                   src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/cd2d844f-ae3f-4fa9-8067-b077530b6e71.webp"
-                  alt="A vegetable garden with tomato stakes and a cottage"
+                  alt="Modern web application UI project showcase"
                   loading="lazy"
                 />
                 <div className="card-play-btn" aria-hidden="true">
@@ -223,13 +223,13 @@ export default function MeadowbellHeroPage() {
               </div>
             </article>
 
-            {/* Card 2: Hill path & sheep */}
+            {/* Project Card 2 */}
             <article className="chapter-card chapter-card-2" ref={card2Ref}>
               <div className="card-media-wrapper">
                 <img
                   className="card-art"
                   src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/48f5b97e-c27c-4afd-9427-eb35aebd1751.webp"
-                  alt="A boy and dog on a hill path among sheep above the sea"
+                  alt="Full-stack interactive portal project showcase"
                   loading="lazy"
                 />
                 <div className="card-play-btn" aria-hidden="true">
@@ -240,13 +240,13 @@ export default function MeadowbellHeroPage() {
               </div>
             </article>
 
-            {/* Card 3: Kite on breezy hill */}
+            {/* Project Card 3 */}
             <article className="chapter-card chapter-card-3" ref={card3Ref}>
               <div className="card-media-wrapper">
                 <img
                   className="card-art"
                   src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/cde5384e-ce4d-423f-925a-451b779066e0.webp"
-                  alt="A girl in a straw hat flying a kite on a breezy hill"
+                  alt="SaaS analytics and UI motion project showcase"
                   loading="lazy"
                 />
                 <div className="card-play-btn" aria-hidden="true">
