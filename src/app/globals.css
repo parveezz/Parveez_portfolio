@@ -6,6 +6,10 @@
   --headline-shadow: 0 calc(4 * var(--u)) calc(18 * var(--u)) rgba(28, 70, 120, 0.28);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 * {
