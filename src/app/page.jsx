@@ -230,14 +230,15 @@ export default function MeadowbellHeroPage() {
 
                 {/* Bottom Bar */}
                 <div className="card-bottom-bar">
-                  <div className="card-play-btn" aria-hidden="true">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z" />
-                    </svg>
-                  </div>
                   <div className="card-milestone">
                     <span className="card-milestone-title">Foundations & Seeds</span>
                     <span className="card-milestone-sub">HTML5 · CSS3 · JS · React</span>
+                  </div>
+                  <div className="card-arrow-btn" aria-label="Explore Learning Frontend">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <line x1="7" y1="17" x2="17" y2="7" />
+                      <polyline points="7 7 17 7 17 17" />
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -265,14 +266,15 @@ export default function MeadowbellHeroPage() {
 
                 {/* Bottom Bar */}
                 <div className="card-bottom-bar">
-                  <div className="card-play-btn" aria-hidden="true">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z" />
-                    </svg>
-                  </div>
                   <div className="card-milestone">
                     <span className="card-milestone-title">Professional Journey</span>
                     <span className="card-milestone-sub">Next.js · Production Apps · Team</span>
+                  </div>
+                  <div className="card-arrow-btn" aria-label="Explore The Path of Invertio">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <line x1="7" y1="17" x2="17" y2="7" />
+                      <polyline points="7 7 17 7 17 17" />
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -300,14 +302,15 @@ export default function MeadowbellHeroPage() {
 
                 {/* Bottom Bar */}
                 <div className="card-bottom-bar">
-                  <div className="card-play-btn" aria-hidden="true">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z" />
-                    </svg>
-                  </div>
                   <div className="card-milestone">
                     <span className="card-milestone-title">Mastery & Horizons</span>
                     <span className="card-milestone-sub">UI Motion · Full-Stack · Continuous</span>
+                  </div>
+                  <div className="card-arrow-btn" aria-label="Explore Experience & Beyond">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <line x1="7" y1="17" x2="17" y2="7" />
+                      <polyline points="7 7 17 7 17 17" />
+                    </svg>
                   </div>
                 </div>
               </div>
