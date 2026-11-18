@@ -320,9 +320,17 @@ body {
   z-index: 5;
 }
 
-.chapter-card-1 { left: calc(133 * var(--u)); }
-.chapter-card-2 { left: calc(531 * var(--u)); }
-.chapter-card-3 { left: calc(929 * var(--u)); }
+.chapter-card-1 {
+  left: calc(133 * var(--u));
+}
+
+.chapter-card-2 {
+  left: calc(531 * var(--u));
+}
+
+.chapter-card-3 {
+  left: calc(929 * var(--u));
+}
 
 .card-media-wrapper {
   position: relative;
@@ -391,7 +399,10 @@ body {
   .scene-video {
     display: none !important;
   }
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     transition-duration: 0.001ms !important;
     animation-duration: 0.001ms !important;
   }
@@ -421,7 +432,8 @@ body {
   }
 
   /* Phone Scene: 9:8 box sized to hero's height shifted so boy and dog stay in view */
-  .scene-plate, .scene-video {
+  .scene-plate,
+  .scene-video {
     width: auto;
     height: 100%;
     aspect-ratio: 9 / 8;

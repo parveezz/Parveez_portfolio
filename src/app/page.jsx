@@ -137,27 +137,27 @@ export default function MeadowbellHeroPage() {
       <div className="content-layer">
         {/* Top Navigation */}
         <nav className="nav-header">
-          <a href="#" className="nav-logo" ref={logoRef} aria-label="Meadowbell Home">
+          <a href="#" className="nav-logo" ref={logoRef} aria-label="Shaik Parveez">
             <svg viewBox="0 0 24 24">
               <path d="M12 3C8 3 4 7 4 12C7 12 11 9 12 3Z" />
               <path d="M12 7C14 7 20 8.5 20 14C16.5 14 13 11.5 12 7Z" />
               <path d="M11 12C11 17 11.5 21 12 21" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" fill="none" />
             </svg>
-            <span>Meadowbell</span>
+            <span>Shaik Parveez</span>
           </a>
 
           <div className="nav-pill" ref={navPillRef}>
-            <a href="#farm">Farm</a>
+            <a href="#about">About</a>
             <span className="dot">·</span>
-            <a href="#gear">Gear</a>
+            <a href="#skills">Skills</a>
             <span className="dot">·</span>
-            <a href="#chapters">Chapters</a>
+            <a href="#projects">Projects</a>
             <span className="dot">·</span>
-            <a href="#crew">Our Crew</a>
+            <a href="#experience">Experience</a>
           </div>
 
-          <a href="#join" className="nav-join" ref={navJoinRef}>
-            Join us
+          <a href="#contact" className="nav-join" ref={navJoinRef}>
+            Contact
           </a>
         </nav>
 

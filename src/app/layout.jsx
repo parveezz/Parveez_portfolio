@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Hollyoak's Plucky Sprout Squad — Meadowbell",
+  title: "Shaik Parveez | Frontend Developer",
   description:
-    "An animated kids' farming series from Meadowbell. Learn the Ways of the Meadow with Hollyoak's Plucky Sprout Squad!",
+    "Portfolio of Shaik Parveez — Frontend & Full-Stack Developer crafting clean, responsive, and high-performance web experiences.",
   icons: {
     icon: "/favicon.ico",
   },
