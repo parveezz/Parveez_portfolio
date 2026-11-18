@@ -353,28 +353,127 @@ body {
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1);
 }
 
-.card-play-btn {
+/* Card Scrim Overlays for legibility */
+.card-scrim-top {
   position: absolute;
-  left: calc(20 * var(--u));
-  bottom: calc(20 * var(--u));
-  width: calc(38 * var(--u));
-  height: calc(38 * var(--u));
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 52%;
+  background: linear-gradient(180deg, rgba(12, 18, 14, 0.76) 0%, rgba(12, 18, 14, 0.35) 60%, transparent 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.card-scrim-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 52%;
+  background: linear-gradient(0deg, rgba(12, 18, 14, 0.82) 0%, rgba(12, 18, 14, 0.38) 60%, transparent 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Card Header Badge at Top */
+.card-header-badge {
+  position: absolute;
+  top: calc(16 * var(--u));
+  left: calc(18 * var(--u));
+  right: calc(18 * var(--u));
+  display: flex;
+  flex-direction: column;
+  gap: calc(3 * var(--u));
+  z-index: 3;
+}
+
+.card-stage-tag {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: calc(11 * var(--u));
+  letter-spacing: calc(1 * var(--u));
+  color: #C9A66B;
+  text-transform: uppercase;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.card-title {
+  font-family: 'Grandstander', cursive, sans-serif;
+  font-weight: 900;
+  font-size: calc(21 * var(--u));
+  line-height: 1.15;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  letter-spacing: calc(0.3 * var(--u));
+}
+
+/* Card Bottom Bar */
+.card-bottom-bar {
+  position: absolute;
+  left: calc(18 * var(--u));
+  bottom: calc(16 * var(--u));
+  right: calc(18 * var(--u));
+  display: flex;
+  align-items: center;
+  gap: calc(12 * var(--u));
+  z-index: 3;
+}
+
+.card-play-btn {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: calc(36 * var(--u));
+  height: calc(36 * var(--u));
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 calc(2 * var(--u)) calc(8 * var(--u)) rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  box-shadow: 0 calc(2 * var(--u)) calc(8 * var(--u)) rgba(0, 0, 0, 0.35);
   transition: transform 0.25s ease, background 0.25s ease;
 }
 
 .card-play-btn svg {
-  width: calc(14 * var(--u));
-  height: calc(14 * var(--u));
+  width: calc(13 * var(--u));
+  height: calc(13 * var(--u));
   fill: #2c4a32;
   margin-left: calc(2 * var(--u));
+}
+
+.card-milestone {
+  display: flex;
+  flex-direction: column;
+  gap: calc(2 * var(--u));
+  overflow: hidden;
+}
+
+.card-milestone-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: calc(13.5 * var(--u));
+  line-height: 1.2;
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-milestone-sub {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: calc(11.5 * var(--u));
+  line-height: 1.2;
+  color: rgba(245, 239, 230, 0.85);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Hover effects */
@@ -619,9 +718,29 @@ body {
     border-radius: 14px;
   }
 
+  .card-header-badge {
+    top: 12px;
+    left: 14px;
+    right: 14px;
+    gap: 2px;
+  }
+
+  .card-stage-tag {
+    font-size: 10px;
+  }
+
+  .card-title {
+    font-size: 17px;
+  }
+
+  .card-bottom-bar {
+    left: 14px;
+    bottom: 12px;
+    right: 14px;
+    gap: 10px;
+  }
+
   .card-play-btn {
-    left: 16px;
-    bottom: 16px;
     width: 32px;
     height: 32px;
   }
@@ -629,5 +748,13 @@ body {
   .card-play-btn svg {
     width: 12px;
     height: 12px;
+  }
+
+  .card-milestone-title {
+    font-size: 12px;
+  }
+
+  .card-milestone-sub {
+    font-size: 10px;
   }
 }

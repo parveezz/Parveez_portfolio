@@ -206,53 +206,107 @@ export default function MeadowbellHeroPage() {
           </div>
 
           <div className="chapters-scroll-track">
-            {/* Project Card 1 */}
+            {/* Project Card 1: Learning Frontend */}
             <article className="chapter-card chapter-card-1" ref={card1Ref}>
               <div className="card-media-wrapper">
                 <img
                   className="card-art"
                   src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/cd2d844f-ae3f-4fa9-8067-b077530b6e71.webp"
-                  alt="Modern web application UI project showcase"
+                  alt="Learning Frontend - Foundations & Component Roots"
                   loading="lazy"
                 />
-                <div className="card-play-btn" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z" />
-                  </svg>
+
+                {/* Gradient Scrims for Text Legibility */}
+                <div className="card-scrim-top" aria-hidden="true" />
+                <div className="card-scrim-bottom" aria-hidden="true" />
+
+                {/* Top Highlight Badge & Title */}
+                <div className="card-header-badge">
+                  <span className="card-stage-tag">CHAPTER 01</span>
+                  <h3 className="card-title">Learning the Frontend</h3>
+                </div>
+
+                {/* Bottom Bar */}
+                <div className="card-bottom-bar">
+                  <div className="card-play-btn" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z" />
+                    </svg>
+                  </div>
+                  <div className="card-milestone">
+                    <span className="card-milestone-title">Foundations & Seeds</span>
+                    <span className="card-milestone-sub">HTML5 · CSS3 · JS · React</span>
+                  </div>
                 </div>
               </div>
             </article>
 
-            {/* Project Card 2 */}
+            {/* Project Card 2: The Path of Invertio */}
             <article className="chapter-card chapter-card-2" ref={card2Ref}>
               <div className="card-media-wrapper">
                 <img
                   className="card-art"
                   src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/48f5b97e-c27c-4afd-9427-eb35aebd1751.webp"
-                  alt="Full-stack interactive portal project showcase"
+                  alt="The Path of Invertio - Professional Software Journey"
                   loading="lazy"
                 />
-                <div className="card-play-btn" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z" />
-                  </svg>
+
+                {/* Gradient Scrims for Text Legibility */}
+                <div className="card-scrim-top" aria-hidden="true" />
+                <div className="card-scrim-bottom" aria-hidden="true" />
+
+                {/* Top Highlight Badge & Title */}
+                <div className="card-header-badge">
+                  <span className="card-stage-tag">CHAPTER 02</span>
+                  <h3 className="card-title">The Path of Invertio</h3>
+                </div>
+
+                {/* Bottom Bar */}
+                <div className="card-bottom-bar">
+                  <div className="card-play-btn" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z" />
+                    </svg>
+                  </div>
+                  <div className="card-milestone">
+                    <span className="card-milestone-title">Professional Journey</span>
+                    <span className="card-milestone-sub">Next.js · Production Apps · Team</span>
+                  </div>
                 </div>
               </div>
             </article>
 
-            {/* Project Card 3 */}
+            {/* Project Card 3: Experience & Growth */}
             <article className="chapter-card chapter-card-3" ref={card3Ref}>
               <div className="card-media-wrapper">
                 <img
                   className="card-art"
                   src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/cde5384e-ce4d-423f-925a-451b779066e0.webp"
-                  alt="SaaS analytics and UI motion project showcase"
+                  alt="Growth & Experience - Mastering Modern Web Engineering"
                   loading="lazy"
                 />
-                <div className="card-play-btn" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z" />
-                  </svg>
+
+                {/* Gradient Scrims for Text Legibility */}
+                <div className="card-scrim-top" aria-hidden="true" />
+                <div className="card-scrim-bottom" aria-hidden="true" />
+
+                {/* Top Highlight Badge & Title */}
+                <div className="card-header-badge">
+                  <span className="card-stage-tag">CHAPTER 03</span>
+                  <h3 className="card-title">Experience & Beyond</h3>
+                </div>
+
+                {/* Bottom Bar */}
+                <div className="card-bottom-bar">
+                  <div className="card-play-btn" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M7 5.5C7 4.7 7.9 4.2 8.6 4.65L18.4 11.15C19.05 11.55 19.05 12.45 18.4 12.85L8.6 19.35C7.9 19.8 7 19.3 7 18.5V5.5Z" />
+                    </svg>
+                  </div>
+                  <div className="card-milestone">
+                    <span className="card-milestone-title">Mastery & Horizons</span>
+                    <span className="card-milestone-sub">UI Motion · Full-Stack · Continuous</span>
+                  </div>
                 </div>
               </div>
             </article>
