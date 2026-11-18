@@ -532,13 +532,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-  line-height: 1.2;
-  color: rgba(245, 239, 230, 0.85);
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 
 /* Hover effects */
 .chapter-card:hover {
@@ -550,7 +543,7 @@ body {
   transform: scale(1.05);
 }
 
-.chapter-card:hover .card-play-btn {
+.chapter-card:hover .card-arrow-btn {
   transform: scale(1.1);
   background: #ffffff;
 }
