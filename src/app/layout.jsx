@@ -1,52 +1,27 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "sonner";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://parveez.dev";
 
 export const metadata = {
-  metadataBase: new URL(baseUrl),
-  title: "Shaik Parveez | Portfolio — Something New is Coming",
+  title: "Hollyoak's Plucky Sprout Squad — Meadowbell",
   description:
-    "Portfolio of Shaik Parveez — Full-Stack Developer specializing in Next.js, React, Node.js, and modern web experiences. Rebuilding with an all-new design.",
-  keywords: [
-    "Shaik Parveez",
-    "Full-Stack Developer",
-    "Frontend Engineer",
-    "React Developer",
-    "Next.js Developer",
-    "Software Engineer",
-  ],
-  authors: [{ name: "Shaik Parveez", url: baseUrl }],
-  creator: "Shaik Parveez",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: baseUrl,
-    siteName: "Shaik Parveez | Portfolio",
-    title: "Shaik Parveez | Coming Soon",
-    description:
-      "Crafting scalable full-stack web experiences. A reimagined portfolio is on its way.",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Shaik Parveez | Coming Soon",
-    description: "Rebuilding something exceptional.",
+    "An animated kids' farming series from Meadowbell. Learn the Ways of the Meadow with Hollyoak's Plucky Sprout Squad!",
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.variable} suppressHydrationWarning>
-      <body className={`${inter.className} antialiased font-sans bg-[#0c120e] text-[#F5EFE6] selection:bg-[#2F5D50] selection:text-[#F5EFE6]`} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Grandstander:wght@900&family=Inter:wght@400;500;600&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="antialiased" suppressHydrationWarning>
         {children}
-        <Toaster position="top-right" richColors closeButton />
       </body>
     </html>
   );
