@@ -166,7 +166,7 @@ export default function MeadowbellPortfolioPage() {
                 id="projects-heading"
                 ref={chaptersTitleRef}
               >
-                PROJECTS
+                Chapters
               </h2>
               <Link
                 href="/projects"
