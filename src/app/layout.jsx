@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://parveez.dev";
 

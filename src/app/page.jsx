@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 export default function MeadowbellPortfolioPage() {
   const kickerRef = useRef(null);
@@ -134,16 +135,16 @@ export default function MeadowbellPortfolioPage() {
 
             {/* Action CTAs */}
             <div className="flex items-center gap-3 sm:gap-4 pt-2 md:pt-4 flex-wrap justify-center w-full max-w-md">
-              <a
-                href="#projects"
+              <Link
+                href="/projects"
                 className="flex-1 sm:flex-none px-8 py-3.5 rounded-full bg-white text-[#5b875c] font-['Grandstander'] font-black text-sm sm:text-base tracking-wider uppercase hover:scale-105 active:scale-95 transition-all shadow-md text-center"
                 ref={btnJoinRef}
                 aria-label="Explore Projects"
               >
                 View Work
-              </a>
-              <a
-                href="mailto:shaikparveez225@gmail.com"
+              </Link>
+              <Link
+                href="/contact"
                 className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[rgba(204,218,173,0.65)] hover:bg-[rgba(204,218,173,0.85)] backdrop-blur-md border border-white/40 text-white font-['Grandstander'] font-black text-sm sm:text-base tracking-wider uppercase hover:scale-105 active:scale-95 transition-all shadow-md text-center"
                 ref={btnPreviewRef}
                 aria-label="Get in Touch via Email"
@@ -153,7 +154,7 @@ export default function MeadowbellPortfolioPage() {
                   <polyline points="7 7 17 7 17 17" />
                 </svg>
                 <span>Get in Touch</span>
-              </a>
+              </Link>
             </div>
           </header>
 
@@ -167,14 +168,14 @@ export default function MeadowbellPortfolioPage() {
               >
                 PROJECTS
               </h2>
-              <a
-                href="#projects"
+              <Link
+                href="/projects"
                 className="font-['Inter'] font-semibold text-sm sm:text-base text-white/95 hover:text-white transition-colors inline-flex items-center gap-1.5 drop-shadow-[0_1px_3px_rgba(28,70,120,0.4)] group"
                 ref={chaptersLinkRef}
               >
                 <span>browse all projects</span>
                 <span className="text-lg leading-none transition-transform group-hover:translate-x-1" aria-hidden="true">›</span>
-              </a>
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
@@ -210,8 +211,8 @@ export default function MeadowbellPortfolioPage() {
                       HTML5 · CSS3 · JS · React
                     </span>
                   </div>
-                  <a
-                    href="#projects"
+                  <Link
+                    href="/about"
                     className="w-10 h-10 rounded-full bg-white/95 group-hover:bg-white text-[#2c4a32] flex items-center justify-center transition-all shadow-md group-hover:scale-110 active:scale-95 shrink-0"
                     aria-label="Explore Chapter 1 Foundations"
                   >
@@ -219,7 +220,7 @@ export default function MeadowbellPortfolioPage() {
                       <line x1="7" y1="17" x2="17" y2="7" />
                       <polyline points="7 7 17 7 17 17" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </article>
 
@@ -255,8 +256,8 @@ export default function MeadowbellPortfolioPage() {
                       Associate Software Engineer · React
                     </span>
                   </div>
-                  <a
-                    href="#projects"
+                  <Link
+                    href="/experience"
                     className="w-10 h-10 rounded-full bg-white/95 group-hover:bg-white text-[#2c4a32] flex items-center justify-center transition-all shadow-md group-hover:scale-110 active:scale-95 shrink-0"
                     aria-label="Explore Invertio Journey"
                   >
@@ -264,7 +265,7 @@ export default function MeadowbellPortfolioPage() {
                       <line x1="7" y1="17" x2="17" y2="7" />
                       <polyline points="7 7 17 7 17 17" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </article>
 
@@ -300,8 +301,8 @@ export default function MeadowbellPortfolioPage() {
                       Admin Portals · Landing Pages · UI
                     </span>
                   </div>
-                  <a
-                    href="#projects"
+                  <Link
+                    href="/projects"
                     className="w-10 h-10 rounded-full bg-white/95 group-hover:bg-white text-[#2c4a32] flex items-center justify-center transition-all shadow-md group-hover:scale-110 active:scale-95 shrink-0"
                     aria-label="Explore Production Projects"
                   >
@@ -309,7 +310,7 @@ export default function MeadowbellPortfolioPage() {
                       <line x1="7" y1="17" x2="17" y2="7" />
                       <polyline points="7 7 17 7 17 17" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </article>
             </div>

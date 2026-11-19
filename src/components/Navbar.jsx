@@ -26,37 +26,37 @@ export default function Navbar() {
       >
         <ul className="flex items-center gap-5 lg:gap-7 m-0 p-0 list-none">
           <li>
-            <a href="#about" className="hover:opacity-80 transition-opacity">ABOUT</a>
+            <Link href="/about" className="hover:opacity-80 transition-opacity">ABOUT</Link>
           </li>
           <li className="text-white/60 font-sans font-bold select-none" aria-hidden="true">
             ·
           </li>
           <li>
-            <a href="#skills" className="hover:opacity-80 transition-opacity">SKILLS</a>
+            <Link href="/skills" className="hover:opacity-80 transition-opacity">SKILLS</Link>
           </li>
           <li className="text-white/60 font-sans font-bold select-none" aria-hidden="true">
             ·
           </li>
           <li>
-            <a href="#projects" className="hover:opacity-80 transition-opacity">PROJECTS</a>
+            <Link href="/projects" className="hover:opacity-80 transition-opacity">PROJECTS</Link>
           </li>
           <li className="text-white/60 font-sans font-bold select-none" aria-hidden="true">
             ·
           </li>
           <li>
-            <a href="#experience" className="hover:opacity-80 transition-opacity">EXPERIENCE</a>
+            <Link href="/experience" className="hover:opacity-80 transition-opacity">EXPERIENCE</Link>
           </li>
         </ul>
       </nav>
 
       {/* Contact Button */}
-      <a
-        href="mailto:shaikparveez225@gmail.com"
+      <Link
+        href="/contact"
         className="pointer-events-auto flex items-center justify-center px-6 py-2.5 rounded-full bg-white text-[#5b875c] font-['Grandstander'] font-black text-sm md:text-base uppercase tracking-wider shadow-md hover:scale-105 active:scale-95 transition-all"
         aria-label="Contact Shaik Parveez"
       >
         CONTACT
-      </a>
+      </Link>
     </header>
   );
 }
