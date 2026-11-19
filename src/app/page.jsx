@@ -81,7 +81,7 @@ export default function MeadowbellPortfolioPage() {
       {/* 1. HERO SECTION (Meadowbell Ghibli Frame)                                 */}
       {/* ========================================================================= */}
       <section className="relative w-full min-h-screen md:h-[1280px] lg:h-[88.88vw] max-h-[1440px] overflow-hidden select-none flex flex-col justify-between" id="heroFrame">
-        
+
         {/* Background Scene: Plate & Looping Animation Layer */}
         <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0" aria-hidden="true">
           <img
@@ -106,7 +106,7 @@ export default function MeadowbellPortfolioPage() {
 
         {/* Content Layer */}
         <div className="relative z-10 w-full h-full flex flex-col justify-between pt-24 sm:pt-28 md:pt-36 pb-8 md:pb-12 px-6 sm:px-10 md:px-14 lg:px-20 max-w-[1440px] mx-auto flex-1">
-          
+
           {/* Center Hero Copy Area */}
           <header className="flex flex-col items-center text-center my-auto max-w-4xl mx-auto space-y-4 md:space-y-5">
             <p

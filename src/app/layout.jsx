@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://parveez.dev";
 
@@ -99,11 +100,12 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="antialiased" suppressHydrationWarning>
+      <body className="antialiased min-h-screen flex flex-col justify-between" suppressHydrationWarning>
         <Navbar />
-        <main id="main-content">
+        <main id="main-content" className="flex-1">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
