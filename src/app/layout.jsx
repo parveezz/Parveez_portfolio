@@ -1,4 +1,5 @@
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://parveez.dev";
 
@@ -99,7 +100,10 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased" suppressHydrationWarning>
-        {children}
+        <Navbar />
+        <main id="main-content">
+          {children}
+        </main>
       </body>
     </html>
   );
