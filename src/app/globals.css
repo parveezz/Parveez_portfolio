@@ -23,6 +23,13 @@
   }
 }
 
+/* Aptos Font Family applied via Footer font-change function */
+html.font-aptos,
+html.font-aptos body,
+html.font-aptos * {
+  font-family: 'Aptos', 'Aptos Display', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   video {
     display: none !important;

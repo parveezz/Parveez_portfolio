@@ -166,7 +166,7 @@ export default function MeadowbellPortfolioPage() {
                 id="projects-heading"
                 ref={chaptersTitleRef}
               >
-                Chapters
+                PROJECTS
               </h2>
               <Link
                 href="/projects"
@@ -179,20 +179,22 @@ export default function MeadowbellPortfolioPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
-              {/* Project Card 1: Learning Frontend */}
-              <article
-                className="group relative h-[220px] sm:h-[260px] md:h-[270px] rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 border border-white/25"
+              {/* Chapter 01: Full Card Click Redirects to /skills */}
+              <Link
                 ref={card1Ref}
+                href="/skills"
+                className="group relative h-[220px] sm:h-[260px] md:h-[270px] w-full rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 border border-white/25 block cursor-pointer select-none"
+                aria-label="Chapter 01 - Learning the Frontend (Go to Skills)"
               >
                 <img
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 pointer-events-none"
                   src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/cd2d844f-ae3f-4fa9-8067-b077530b6e71.webp"
                   alt="Learning Frontend - Fullstack Academy Foundations"
                   loading="lazy"
                 />
 
                 {/* Top Highlight Badge & Title */}
-                <div className="absolute top-4 left-5 right-5 z-10 flex flex-col gap-1">
+                <div className="absolute top-4 left-5 right-5 z-10 flex flex-col gap-1 pointer-events-none">
                   <span className="font-['Inter'] font-extrabold text-[11px] uppercase tracking-wider text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">
                     CHAPTER 01
                   </span>
@@ -202,7 +204,7 @@ export default function MeadowbellPortfolioPage() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="absolute bottom-4 left-5 right-5 z-10 flex items-end justify-between gap-3">
+                <div className="absolute bottom-4 left-5 right-5 z-10 flex items-end justify-between gap-3 pointer-events-none">
                   <div className="drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
                     <span className="font-['Inter'] font-semibold text-sm text-white block">
                       Fullstack Academy
@@ -211,33 +213,34 @@ export default function MeadowbellPortfolioPage() {
                       HTML5 · CSS3 · JS · React
                     </span>
                   </div>
-                  <Link
-                    href="/about"
+                  <span
                     className="w-10 h-10 rounded-full bg-white/95 group-hover:bg-white text-[#2c4a32] flex items-center justify-center transition-all shadow-md group-hover:scale-110 active:scale-95 shrink-0"
-                    aria-label="Explore Chapter 1 Foundations"
+                    aria-hidden="true"
                   >
-                    <svg viewBox="0 0 24 24" className="w-4 h-4 stroke-[#2c4a32] stroke-[2.5] fill-none" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" className="w-4 h-4 stroke-[#2c4a32] stroke-[2.5] fill-none">
                       <line x1="7" y1="17" x2="17" y2="7" />
                       <polyline points="7 7 17 7 17 17" />
                     </svg>
-                  </Link>
+                  </span>
                 </div>
-              </article>
+              </Link>
 
-              {/* Project Card 2: The Path of Invertio */}
-              <article
-                className="group relative h-[220px] sm:h-[260px] md:h-[270px] rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 border border-white/25"
+              {/* Chapter 02: Full Card Click Redirects to /projects */}
+              <Link
                 ref={card2Ref}
+                href="/projects"
+                className="group relative h-[220px] sm:h-[260px] md:h-[270px] w-full rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 border border-white/25 block cursor-pointer select-none"
+                aria-label="Chapter 02 - The Path of Invertio (Go to Projects)"
               >
                 <img
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 pointer-events-none"
                   src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/48f5b97e-c27c-4afd-9427-eb35aebd1751.webp"
                   alt="The Path of Invertio - Associate Software Engineer"
                   loading="lazy"
                 />
 
                 {/* Top Highlight Badge & Title */}
-                <div className="absolute top-4 left-5 right-5 z-10 flex flex-col gap-1">
+                <div className="absolute top-4 left-5 right-5 z-10 flex flex-col gap-1 pointer-events-none">
                   <span className="font-['Inter'] font-extrabold text-[11px] uppercase tracking-wider text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">
                     CHAPTER 02
                   </span>
@@ -247,7 +250,7 @@ export default function MeadowbellPortfolioPage() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="absolute bottom-4 left-5 right-5 z-10 flex items-end justify-between gap-3">
+                <div className="absolute bottom-4 left-5 right-5 z-10 flex items-end justify-between gap-3 pointer-events-none">
                   <div className="drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
                     <span className="font-['Inter'] font-semibold text-sm text-white block">
                       Invertio Corporate Site
@@ -256,33 +259,34 @@ export default function MeadowbellPortfolioPage() {
                       Associate Software Engineer · React
                     </span>
                   </div>
-                  <Link
-                    href="/experience"
+                  <span
                     className="w-10 h-10 rounded-full bg-white/95 group-hover:bg-white text-[#2c4a32] flex items-center justify-center transition-all shadow-md group-hover:scale-110 active:scale-95 shrink-0"
-                    aria-label="Explore Invertio Journey"
+                    aria-hidden="true"
                   >
-                    <svg viewBox="0 0 24 24" className="w-4 h-4 stroke-[#2c4a32] stroke-[2.5] fill-none" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" className="w-4 h-4 stroke-[#2c4a32] stroke-[2.5] fill-none">
                       <line x1="7" y1="17" x2="17" y2="7" />
                       <polyline points="7 7 17 7 17 17" />
                     </svg>
-                  </Link>
+                  </span>
                 </div>
-              </article>
+              </Link>
 
-              {/* Project Card 3: Experience & Growth */}
-              <article
-                className="group relative h-[220px] sm:h-[260px] md:h-[270px] rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 border border-white/25"
+              {/* Chapter 03: Full Card Click Redirects to /experience */}
+              <Link
                 ref={card3Ref}
+                href="/experience"
+                className="group relative h-[220px] sm:h-[260px] md:h-[270px] w-full rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 border border-white/25 block cursor-pointer select-none"
+                aria-label="Chapter 03 - Experience & Beyond (Go to Experience)"
               >
                 <img
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 pointer-events-none"
                   src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/cde5384e-ce4d-423f-925a-451b779066e0.webp"
                   alt="Experience & Beyond - GreenLoop & ZeroQueries Portals"
                   loading="lazy"
                 />
 
                 {/* Top Highlight Badge & Title */}
-                <div className="absolute top-4 left-5 right-5 z-10 flex flex-col gap-1">
+                <div className="absolute top-4 left-5 right-5 z-10 flex flex-col gap-1 pointer-events-none">
                   <span className="font-['Inter'] font-extrabold text-[11px] uppercase tracking-wider text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">
                     CHAPTER 03
                   </span>
@@ -292,7 +296,7 @@ export default function MeadowbellPortfolioPage() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="absolute bottom-4 left-5 right-5 z-10 flex items-end justify-between gap-3">
+                <div className="absolute bottom-4 left-5 right-5 z-10 flex items-end justify-between gap-3 pointer-events-none">
                   <div className="drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
                     <span className="font-['Inter'] font-semibold text-sm text-white block">
                       GreenLoop & ZeroQueries
@@ -301,18 +305,17 @@ export default function MeadowbellPortfolioPage() {
                       Admin Portals · Landing Pages · UI
                     </span>
                   </div>
-                  <Link
-                    href="/projects"
+                  <span
                     className="w-10 h-10 rounded-full bg-white/95 group-hover:bg-white text-[#2c4a32] flex items-center justify-center transition-all shadow-md group-hover:scale-110 active:scale-95 shrink-0"
-                    aria-label="Explore Production Projects"
+                    aria-hidden="true"
                   >
-                    <svg viewBox="0 0 24 24" className="w-4 h-4 stroke-[#2c4a32] stroke-[2.5] fill-none" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" className="w-4 h-4 stroke-[#2c4a32] stroke-[2.5] fill-none">
                       <line x1="7" y1="17" x2="17" y2="7" />
                       <polyline points="7 7 17 7 17 17" />
                     </svg>
-                  </Link>
+                  </span>
                 </div>
-              </article>
+              </Link>
             </div>
           </section>
         </div>
