@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 export default function ContactPage() {
   const videoRef = useRef(null);
-  const email = "shaikparveez225@gmail.com";
+  const email = "shaikparveez290@gmail.com";
   const phone = "+91 6302122429";
 
   useEffect(() => {
@@ -12,14 +12,14 @@ export default function ContactPage() {
       videoRef.current.defaultMuted = true;
       videoRef.current.muted = true;
       videoRef.current.loop = true;
-      videoRef.current.play().catch(() => {});
+      videoRef.current.play().catch(() => { });
     }
   }, []);
 
   const handleVideoEnded = () => {
     if (videoRef.current) {
       videoRef.current.currentTime = 0;
-      videoRef.current.play().catch(() => {});
+      videoRef.current.play().catch(() => { });
     }
   };
 

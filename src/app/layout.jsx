@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
       "@type": "EducationalOrganization",
       name: "Malla Reddy Institute of Technology and Science and Engineering",
     },
-    email: "mailto:shaikparveez225@gmail.com",
+    email: "mailto:shaikparveez290@gmail.com",
     telephone: "+91-6302122429",
     address: {
       "@type": "PostalAddress",

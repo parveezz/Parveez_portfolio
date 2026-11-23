@@ -193,10 +193,10 @@ export default function MeadowbellPortfolioPage() {
             </p>
 
             {/* Action CTAs */}
-            <div className="flex items-center gap-3 sm:gap-4 pt-2 md:pt-4 flex-wrap justify-center w-full max-w-md">
+            <div className="flex items-center gap-2.5 sm:gap-4 pt-2 md:pt-4 justify-center w-full max-w-md mx-auto">
               <Link
                 href="/projects"
-                className="flex-1 sm:flex-none px-8 py-3.5 rounded-full bg-white text-[#5b875c] font-['Grandstander'] font-black text-sm sm:text-base tracking-wider uppercase hover:scale-105 active:scale-95 transition-all shadow-md text-center"
+                className="flex-1 sm:flex-none px-4 sm:px-8 py-3 sm:py-3.5 rounded-full bg-white text-[#5b875c] font-['Grandstander'] font-black text-xs sm:text-base tracking-wider uppercase hover:scale-105 active:scale-95 transition-all shadow-md text-center whitespace-nowrap"
                 ref={btnJoinRef}
                 aria-label="Explore Projects"
               >
@@ -204,11 +204,11 @@ export default function MeadowbellPortfolioPage() {
               </Link>
               <Link
                 href="/contact"
-                className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[rgba(204,218,173,0.65)] hover:bg-[rgba(204,218,173,0.85)] backdrop-blur-md border border-white/40 text-white font-['Grandstander'] font-black text-sm sm:text-base tracking-wider uppercase hover:scale-105 active:scale-95 transition-all shadow-md text-center"
+                className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 sm:gap-2.5 px-4 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[rgba(204,218,173,0.88)] hover:bg-[rgba(204,218,173,1)] backdrop-blur-md border border-[#2F5D50]/20 text-[#2F5D50] font-['Grandstander'] font-black text-xs sm:text-base tracking-wider uppercase hover:scale-105 active:scale-95 transition-all shadow-md text-center whitespace-nowrap"
                 ref={btnPreviewRef}
                 aria-label="Get in Touch via Email"
               >
-                <svg viewBox="0 0 24 24" className="w-4 h-4 stroke-white stroke-[2.5] fill-none" aria-hidden="true">
+                <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[#2F5D50] stroke-[2.5] fill-none shrink-0" aria-hidden="true">
                   <line x1="7" y1="17" x2="17" y2="7" />
                   <polyline points="7 7 17 7 17 17" />
                 </svg>

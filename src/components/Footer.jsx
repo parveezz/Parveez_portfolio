@@ -6,7 +6,10 @@ import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
 export default function Footer() {
-  const email = "shaikparveez225@gmail.com";
+  const email = "shaikparveez290@gmail.com";
+  const whatsappNumber = "6302122429";
+  const githubUrl = "https://github.com/parveezz";
+  const linkedinUrl = "https://www.linkedin.com/in/shaik-parveez/";
   const [isAptos, setIsAptos] = useState(false);
 
   // Synchronize external DOM and storage when font state changes
@@ -32,10 +35,10 @@ export default function Footer() {
 
   return (
     <footer className="w-full border-t border-white/20 bg-black/15 backdrop-blur-md py-6 px-6 sm:px-12 relative z-10" role="contentinfo">
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap-4">
 
-        {/* Brand & Role (Matching Header Style & Font) */}
-        <div className="flex flex-col sm:flex-row items-center sm:items-baseline gap-2 sm:gap-3 text-center sm:text-left">
+        {/* Brand & Role (Bottom on mobile, Left on desktop) */}
+        <div className="flex flex-col sm:flex-row items-center sm:items-baseline gap-2 sm:gap-3 text-center sm:text-left order-3 sm:order-1">
           <Link
             href="/"
             className="flex items-center gap-2 text-white font-['Grandstander'] font-black text-xl sm:text-2xl uppercase tracking-wider transition-transform hover:scale-105 active:scale-95 select-none drop-shadow-[0_2px_6px_rgba(28,70,120,0.35)]"
@@ -58,13 +61,55 @@ export default function Footer() {
           </span>
         </div>
 
-        {/* Action Controls & Social Icons */}
-        <div className="flex items-center gap-2.5 sm:gap-3 flex-wrap justify-center">
-          {/* Function Button to Change Font to Aptos Family Font */}
+        {/* Action Controls & Social Icons (Top on mobile, Right on desktop) */}
+        <div className="flex flex-col sm:flex-row items-center gap-3 order-1 sm:order-2">
+          {/* Social Links (Top on Mobile, Right on Desktop) */}
+          <div className="flex items-center gap-3 order-1 sm:order-2">
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-9 h-9 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#5b875c] border border-white/30 flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95"
+              aria-label="GitHub Profile (parveezz)"
+              title="GitHub: parveezz"
+            >
+              <FaGithub className="text-sm" />
+            </a>
+            <a
+              href={linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-9 h-9 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#5b875c] border border-white/30 flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95"
+              aria-label="LinkedIn Profile"
+              title="LinkedIn: /in/shaik-parveez"
+            >
+              <FaLinkedinIn className="text-sm" />
+            </a>
+            <a
+              href={`https://wa.me/91${whatsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-9 h-9 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#5b875c] border border-white/30 flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95"
+              aria-label="WhatsApp Chat (+91 6302122429)"
+              title="WhatsApp: +91 6302122429"
+            >
+              <FaWhatsapp className="text-sm" />
+            </a>
+            <a
+              href={`mailto:${email}`}
+              className="w-9 h-9 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#5b875c] border border-white/30 flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95"
+              aria-label={`Send Email to ${email}`}
+              title={`Email: ${email}`}
+            >
+              <FiMail className="text-sm" />
+            </a>
+          </div>
+
+          {/* Changing the Font / Text Button (Bottom of links on Mobile, Left of links on Desktop) */}
           <button
             type="button"
             onClick={changeFont}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all shadow-sm hover:scale-105 active:scale-95 cursor-pointer select-none ${isAptos
+            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border text-xs font-semibold transition-all shadow-sm hover:scale-105 active:scale-95 cursor-pointer select-none order-2 sm:order-1 ${isAptos
                 ? "bg-white text-[#5b875c] border-white font-bold"
                 : "bg-white/20 hover:bg-white text-white hover:text-[#5b875c] border-white/30"
               }`}
@@ -76,42 +121,6 @@ export default function Footer() {
               {isAptos ? "Aptos Active" : "Change to Aptos"}
             </span>
           </button>
-
-          {/* Social Icons */}
-          <a
-            href="https://github.com/parveezz"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-8 sm:w-9 h-8 sm:h-9 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#5b875c] border border-white/30 flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95"
-            aria-label="GitHub Profile"
-          >
-            <FaGithub className="text-sm" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/shaik-parveez"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-8 sm:w-9 h-8 sm:h-9 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#5b875c] border border-white/30 flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95"
-            aria-label="LinkedIn Profile"
-          >
-            <FaLinkedinIn className="text-sm" />
-          </a>
-          <a
-            href="https://wa.me/916302122429"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-8 sm:w-9 h-8 sm:h-9 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#5b875c] border border-white/30 flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95"
-            aria-label="WhatsApp Chat"
-          >
-            <FaWhatsapp className="text-sm" />
-          </a>
-          <a
-            href={`mailto:${email}`}
-            className="w-8 sm:w-9 h-8 sm:h-9 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#5b875c] border border-white/30 flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95"
-            aria-label="Send Email"
-          >
-            <FiMail className="text-sm" />
-          </a>
         </div>
       </div>
     </footer>
