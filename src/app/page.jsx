@@ -5,8 +5,6 @@ import Link from "next/link";
 
 export default function MeadowbellPortfolioPage() {
   const kickerRef = useRef(null);
-  const headline1Ref = useRef(null);
-  const headline2Ref = useRef(null);
   const sublineRef = useRef(null);
   const btnJoinRef = useRef(null);
   const btnPreviewRef = useRef(null);
@@ -15,6 +13,10 @@ export default function MeadowbellPortfolioPage() {
   const card1Ref = useRef(null);
   const card2Ref = useRef(null);
   const card3Ref = useRef(null);
+
+  const word1 = "FRONTEND";
+  const word2 = "WEB";
+  const word3 = "DEVELOPER";
 
   useEffect(() => {
     // Respect accessibility preference for reduced motion
@@ -30,49 +32,28 @@ export default function MeadowbellPortfolioPage() {
         ],
         {
           duration: 750,
-          delay: 350,
+          delay: 250,
           easing: "cubic-bezier(0.16, 1, 0.3, 1)",
           fill: "backwards",
         }
       );
     }
 
-    // 2. Each headline line springs up out of blur, 0.16s apart
-    const headlineTiming = { duration: 850, easing: "cubic-bezier(0.34, 1.56, 0.64, 1)", fill: "backwards" };
-    if (headline1Ref.current) {
-      headline1Ref.current.animate(
-        [
-          { opacity: 0, filter: "blur(16px)", transform: "translateY(45px) scale(0.96)" },
-          { opacity: 1, filter: "blur(0px)", transform: "translateY(0) scale(1)" },
-        ],
-        { ...headlineTiming, delay: 480 }
-      );
-    }
-    if (headline2Ref.current) {
-      headline2Ref.current.animate(
-        [
-          { opacity: 0, filter: "blur(16px)", transform: "translateY(45px) scale(0.96)" },
-          { opacity: 1, filter: "blur(0px)", transform: "translateY(0) scale(1)" },
-        ],
-        { ...headlineTiming, delay: 640 }
-      );
-    }
-
-    // 3. Subline, buttons, chapters title & link, cards rise in turn
+    // 2. Subline, buttons, chapters title & link, cards rise in choreographed sequence after letters drop
     const riseKeyframes = [
       { opacity: 0, transform: "translateY(26px)" },
       { opacity: 1, transform: "translateY(0)" },
     ];
     const riseTiming = { duration: 700, easing: "cubic-bezier(0.16, 1, 0.3, 1)", fill: "backwards" };
 
-    if (sublineRef.current) sublineRef.current.animate(riseKeyframes, { ...riseTiming, delay: 820 });
-    if (btnJoinRef.current) btnJoinRef.current.animate(riseKeyframes, { ...riseTiming, delay: 940 });
-    if (btnPreviewRef.current) btnPreviewRef.current.animate(riseKeyframes, { ...riseTiming, delay: 1020 });
-    if (chaptersTitleRef.current) chaptersTitleRef.current.animate(riseKeyframes, { ...riseTiming, delay: 1140 });
-    if (chaptersLinkRef.current) chaptersLinkRef.current.animate(riseKeyframes, { ...riseTiming, delay: 1180 });
-    if (card1Ref.current) card1Ref.current.animate(riseKeyframes, { ...riseTiming, delay: 1260 });
-    if (card2Ref.current) card2Ref.current.animate(riseKeyframes, { ...riseTiming, delay: 1380 });
-    if (card3Ref.current) card3Ref.current.animate(riseKeyframes, { ...riseTiming, delay: 1500 });
+    if (sublineRef.current) sublineRef.current.animate(riseKeyframes, { ...riseTiming, delay: 1180 });
+    if (btnJoinRef.current) btnJoinRef.current.animate(riseKeyframes, { ...riseTiming, delay: 1280 });
+    if (btnPreviewRef.current) btnPreviewRef.current.animate(riseKeyframes, { ...riseTiming, delay: 1360 });
+    if (chaptersTitleRef.current) chaptersTitleRef.current.animate(riseKeyframes, { ...riseTiming, delay: 1450 });
+    if (chaptersLinkRef.current) chaptersLinkRef.current.animate(riseKeyframes, { ...riseTiming, delay: 1490 });
+    if (card1Ref.current) card1Ref.current.animate(riseKeyframes, { ...riseTiming, delay: 1550 });
+    if (card2Ref.current) card2Ref.current.animate(riseKeyframes, { ...riseTiming, delay: 1650 });
+    if (card3Ref.current) card3Ref.current.animate(riseKeyframes, { ...riseTiming, delay: 1750 });
   }, []);
 
   return (
@@ -116,13 +97,91 @@ export default function MeadowbellPortfolioPage() {
               SHAIK PARVEEZ
             </p>
 
-            <h1 className="font-['Grandstander'] font-black text-4xl sm:text-6xl md:text-7xl lg:text-[88px] uppercase text-white tracking-tight leading-[1.05] drop-shadow-[0_4px_18px_rgba(28,70,120,0.35)]">
-              <span className="inline-block" ref={headline1Ref}>
-                FRONTEND
+            <h1
+              className="font-['Grandstander'] font-black text-4xl sm:text-6xl md:text-7xl lg:text-[88px] uppercase text-white tracking-tight leading-[1.05] drop-shadow-[0_4px_18px_rgba(28,70,120,0.35)]"
+              aria-label="FRONTEND WEB DEVELOPER"
+            >
+              {/* Line 1: FRONTEND */}
+              <span className="block" aria-hidden="true">
+                <span className="inline-block whitespace-nowrap">
+                  {word1.split("").map((char, i) => {
+                    const globalIndex = i;
+                    return (
+                      <span
+                        key={i}
+                        className="inline-block letter-drop"
+                        style={{
+                          animationDelay: `${280 + globalIndex * 45}ms`,
+                        }}
+                      >
+                        <span
+                          className="inline-block letter-float hover:-translate-y-2 sm:hover:-translate-y-3 hover:scale-115 hover:rotate-3 transition-transform duration-200 cursor-default select-none"
+                          style={{
+                            animationDelay: `${(globalIndex * 0.16) % 2.4}s`,
+                          }}
+                        >
+                          {char}
+                        </span>
+                      </span>
+                    );
+                  })}
+                </span>
               </span>
-              <br />
-              <span className="inline-block" ref={headline2Ref}>
-                WEB DEVELOPER
+
+              {/* Line 2: WEB DEVELOPER */}
+              <span className="block mt-1 sm:mt-2" aria-hidden="true">
+                {/* Word: WEB */}
+                <span className="inline-block whitespace-nowrap">
+                  {word2.split("").map((char, i) => {
+                    const globalIndex = word1.length + i;
+                    return (
+                      <span
+                        key={i}
+                        className="inline-block letter-drop"
+                        style={{
+                          animationDelay: `${280 + globalIndex * 45}ms`,
+                        }}
+                      >
+                        <span
+                          className="inline-block letter-float hover:-translate-y-2 sm:hover:-translate-y-3 hover:scale-115 hover:rotate-3 transition-transform duration-200 cursor-default select-none"
+                          style={{
+                            animationDelay: `${(globalIndex * 0.16) % 2.4}s`,
+                          }}
+                        >
+                          {char}
+                        </span>
+                      </span>
+                    );
+                  })}
+                </span>
+
+                {/* Word Spacing */}
+                <span className="inline-block w-3 sm:w-5 md:w-6" />
+
+                {/* Word: DEVELOPER */}
+                <span className="inline-block whitespace-nowrap">
+                  {word3.split("").map((char, i) => {
+                    const globalIndex = word1.length + word2.length + i;
+                    return (
+                      <span
+                        key={i}
+                        className="inline-block letter-drop"
+                        style={{
+                          animationDelay: `${280 + globalIndex * 45}ms`,
+                        }}
+                      >
+                        <span
+                          className="inline-block letter-float hover:-translate-y-2 sm:hover:-translate-y-3 hover:scale-115 hover:rotate-3 transition-transform duration-200 cursor-default select-none"
+                          style={{
+                            animationDelay: `${(globalIndex * 0.16) % 2.4}s`,
+                          }}
+                        >
+                          {char}
+                        </span>
+                      </span>
+                    );
+                  })}
+                </span>
               </span>
             </h1>
 
